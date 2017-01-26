@@ -1,0 +1,101 @@
+/* General Document */
+/*============================*/
+body, html {
+	width: 100%;
+	height: 100%;
+	background: #F9B93F;
+}
+
+/* Borders to Comment Out */
+/*============================*/
+/*header {
+	border: 1px solid red;
+}
+section {
+	border: 1px solid blue;
+}
+.devour-section {
+	border: 1px solid purple;
+}
+.add-section {
+	border: 1px solid pink;
+}
+.eat {
+	border: 1px solid red;
+}
+.eaten {
+	border: 1px solid blue;	
+}
+form {
+	border: 1px solid green;
+}*/
+/* Header */
+/*============================*/
+header {
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 25px;
+	width: 100%;
+	text-align: center;
+}
+h1 {
+	font-size: 36px;;
+}
+.burger-img {
+	width: 100px;
+	height: 75px;
+	padding-top: 15px;
+	padding-bottom: 25px;
+}
+
+/* Section */
+/*============================*/
+section {
+	float: left;
+	width: 100%;
+	height: 30%;
+	overflow: none;
+}
+/* devour-section */
+/*============================*/
+.devour-section {
+	width: 50%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.eat {
+	float: left;
+	width: 48%;
+	height: 100%;
+}
+.eaten {
+	float: right;
+	width: 48%;
+	height: 100%;
+}
+
+/* add-section */
+/*============================*/
+.add-section {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+form{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-flow: column wrap;
+}
+textarea {
+	width: 100%;
+	height: 8em;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.submit {
+	font-size: 18px
+}
