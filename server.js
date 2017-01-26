@@ -1,11 +1,12 @@
 //Dependencies
 //===============================
-var express = require('express');
-var bodyParser = require('body-parser');
-var methodOverride = require('method-override');
+var express = require("express");
+var bodyParser = require("body-parser");
+var methodOverride = require("method-override");
+var db = require("./models");
 
+var PORT = process.env.NODE_ENV || 3000;
 var app = express();
-var PORT = 3000;
 
 //Set up Express App to handle data parsing
 app.use(bodyParser.json());
@@ -32,6 +33,8 @@ require("./controllers/burgers_controller.js")(app);
 
 //Listener
 //===============================
-app.listen(PORT, function() {
-  console.log("Listening on PORT " + PORT);
+db.sequelize.sync().then(function() {
+	app.listen(PORT, function() {
+	  console.log("Listening on PORT " + PORT);
+	});
 });
