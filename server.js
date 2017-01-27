@@ -29,7 +29,9 @@ app.use(express.static(process.cwd() + "/public"));
 
 //Routes
 //===============================
-require("./controllers/burgers_controller.js")(app);
+var routes = require("./controllers/burgers_controller.js");
+
+app.use("/", routes);
 
 //Listener
 //===============================
