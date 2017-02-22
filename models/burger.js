@@ -15,23 +15,3 @@ module.exports = function(sequelize, DataTypes) {
 	});
 	return Burger;
 };
-
-// var burger = {
-// 	selectAll: function(callback) {
-// 		// orm.selectAll("burgers", function(response) {
-// 		// 	callback(response);
-// 		// });
-// 	},
-// 	insertOne: function(cols, vals, callback){
-// 		// orm.insertOne("burgers", cols, vals, function(response) {
-// 		// 	callback(response);
-// 		// });
-// 	},
-// 	updateOne: function(colVal, condition, callback){
-// 		// orm.updateOne("burgers", colVal, condition, function(response) {
-// 		// 	callback(response);
-// 		// });
-// 	}
-// };
-
-// module.exports = burger;
